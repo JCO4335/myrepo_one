@@ -46,16 +46,11 @@ h1 {
     color: rgb(255,255,255);}
 */
 <style>
-*{
-  font-family: Arial, Verdana, sans-serif; color: #665544;
-  text-align: center;}
-  #nav, #feature, .article, #footer {
-    background-color: #efefef;
-    margin-top: 20px;
-    padding: 10px 0px 5px 0px;}
-  #feature, .article {
-    height: 100px;}
-  li {
-    display: inline;
-    padding: 5px;}
+footer {
+  background-color: #304a46;
+  margin-top: 20px;
+  padding: 10px 0px 5px 0px;
+  color: #ffffff;
+}
+
 </style>
