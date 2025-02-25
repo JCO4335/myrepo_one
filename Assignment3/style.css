@@ -39,8 +39,21 @@ body {
     - Comment your observations about the cascade and inheritance
   */
   
-  body {
+/*  body {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(125, 58, 58);}
 h1 {
     color: rgb(255,255,255);}
+*/
+<style>
+.footer {
+  clear: both;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;}
+.footer p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 75%;
+  text-align: right;}
+.footer a {
+  color: #807c72;}
+</style>
