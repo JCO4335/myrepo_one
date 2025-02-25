@@ -5,45 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3: Chapter 5 - Basic CSS, Cascade, and Inheritance</title>
 
-<!--
-    TODO #1 (External CSS):
-      Link to your external 'style.css' file here.
-      For reference, see Chapter 10 about including CSS files.
-  -->     
+<!-- vvv Linking to the External CSS file vvv-->     
   <link href="style.css" type="text/css"
   rel="stylesheet"/>
+
+<!-- vvv Internal CSS vvv -->    
   <style type="text/css">
     body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(185,179,175);}
+    background-color: rgb(132, 128, 125);}
 h1 {
     color: rgb(50, 86, 194);}
   </style>
-<!--
-    ^^^TODO #2 (Internal CSS):
-      Add an internal <style> block here with at least one rule.
-      For example, you might style the <body> or <footer>.
-      Refer to Chapter 5's section on using the <style> element.
-  -->  
 </head>
 <br>
 <body>
-    <!--
-    TODO #3 (Inline CSS):
-      Add a style attribute to at least one element, e.g. this <h1>.
-      Example:
-        <h1 style="color: blue; font-family: serif;">My Demo</h1>
-      Then explain in a comment which Chapter 5 property/properties are used
-      and how they might override the external or internal CSS if conflicts arise.
-  -->
 <h1>The Story Behind "The Starry Night" by Vincent Van Gogh</h1>
 <br>
 <img src="TheStarryNight.jpg" alt="The Starry Night painted by Vincent Van Gogh (1889)" width="600" height="450" />
 <p>
    Born on March 30th, 1853, Vincent Van Gogh is a universally well-known Dutch painter
    who specialized in the style of post-impressionalism. He is responsible for famous paintings
-   such as <i>Almond Blossoms</i>(1890), <i>Vase with Fifteen Sunflowers</i>(1888), 
-   and <i>The Starry Night</i>(1889). While his first passion was wokring as a missionary,
+   such as <i>Almond Blossoms</i> (1890), <i>Vase with Fifteen Sunflowers</i> (1888), 
+   and <i>The Starry Night</i> (1889). While his first passion was wokring as a missionary,
    in Belgium, he quickly developed an immense love for art. At the age of 33 (1886), Van Gogh moved
    to Paris, France to begin his profession as an artist.  
 <br> 
@@ -51,32 +35,22 @@ h1 {
     If you set a 'color' or 'font-family' on the <body> or a parent element,
     it should automatically apply here, unless it's overridden.--> 
 <p>
-    <i>The Starry Night</i> by Vincent Van Gogh is considered on of the most famous
+  <!-- vvv Inline CSS example. In the css file, I made all italicized text blue but for this paragraph I made it yellow instead (shows cascade override).vvv -->  
+  <b style="color: rgb(243, 238, 166)"><i style="color: rgb(243, 238, 166)">The Starry Night</i></b>
+    by Vincent Van Gogh is considered on of the most famous
     paintings of all time. Painted in 1889, Van Gogh moved to the south of France
     as he was stressed from the environment of Paris. Unfortunately, Van Gogh's life
     was riddled with mental health issues and instability. It got to the point where
     he suffered from mental breakdowns and committed acts of self-harm (such as mutilating his left ear). 
     He spent time in numerous asylums/psychiatric hospitals. Specifically, he spent
     time at the <strong>Saint-Paul-de-Masuole</strong> monastery. In this monastery, it
-    is confirmed that <i>The Starry Night</i> was inspired by the outside view
+    is confirmed that <i style="color: rgb(243, 238, 166)">The Starry Night</i> was inspired by the outside view
     from his bedroom in the asylum. Many interpret the painting as the epitome of Van Gogh's
     mental stuggles and melancholic perspective. In uncovered letters written by Van Gogh, he was not
     satisfied by the painting and saw it as a failed project. Vincent Van Gogh continued to
     struggled until he died from a self-inflicted gunshot wound in 1890. 
   </p> 
   <br> 
-<!-- Modify colors, fonts, text size, etc. in your external or internal CSS.
-    Observe how the CSS cascade and inheritance affect these paragraphs
-    vs. any inline-styled elements.-->
-
-  <!--
-    TODO #4 (Demonstrate Cascade):
-      For example, if your external CSS sets a color on <h1>,
-      and your internal CSS sets a different color, see which one wins.
-      Add a short comment explaining the result according to Chapter 5
-      on the CSS cascade.
-  -->
-       
   <footer>
     <p>&copy; The Starry Night 2025</p>
   </footer>
