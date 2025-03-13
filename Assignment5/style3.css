@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: lightblue;
-    Grid-template-columns: repeat (4, 1fr)
+    Grid-template-columns: repeat(4, 1fr)
 }
 
 /*extends to edges of page*/
