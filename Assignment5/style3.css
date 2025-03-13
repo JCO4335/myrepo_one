@@ -1,11 +1,69 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr); /* 3 equal columns*/
-    gap: 10px; /*spacing between items*/
+/*nav bar*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightblue;
+    Grid-template-columns: repeat (4, 1fr)
 }
 
+/*extends to edges of page*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*box color*/
 .box {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     padding: 20px;
     text-align: center;
+    margin: 10px
 }
+
+/*flex for nav ^^^^ */
+@media (max-width: 768px) {
+    .navbar, .row, .box {
+        flex-direction: column;
+    }
+}
+
+/*main layout*/
+.grid-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    background-color:#eaff00;
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.sidebar {
+    background-color:#ffa8be;
+    flex: 1;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+/*flex for main area ^^^^*/
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #67dc90;
+    padding: 20px;
+    text-align:center;
+    color: rgb(0, 0, 0);
+  }
